@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold ;
+    src: url(gilroy-semi-bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(gilroy-medium.ttf);
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.container{
+    background-color: #002062;
+    width: 100%;
+    height: 1024px;
+}
+
+.box{
+    display: flex;
+    height: 1024px;
+}
+
+.box-1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+h1{
+    font-family: Gilroy-SemiBold;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 50px 0px;
+}
+
+p{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 17.2px;
+    color: #9B9B9B;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.input-container div, .Sign-in-apps{
+
+    width: 350px;
+    height: 48.84px;
+    border-radius: 10px;
+    background-color: #0F2D6B;
+    outline: none;
+    margin: 3px;
+    border: 0.3px solid #4671C6A6;
+    display: flex;
+    align-items: center;
+}
+
+.input-container div svg{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.input-container div .show{
+    opacity: 0.4;
+
+}
+
+.input-container div input{
+
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #0F2D6B;
+    width: 100%;
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 17.2px;
+}
+
+.input-container a{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.2px;
+    margin-left: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.sign-in{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-in-btn{
+    background: #1A4FBA;
+    width: 350px;
+    height: 48.84px;
+    border-radius: 10px;
+    outline: none;
+    margin: 3px;
+    border: 0.3px solid #4671C6A6;
+    display: flex;
+    align-items: center;
+    font-family: Gilroy-SemiBold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sign-in-btn:hover{
+    background-color: #123479;
+    border-color: whitesmoke ;
+}
+
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.sign-in .separator p{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 17.2px;
+    color: #9B9B9B;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.separator .line{
+    border: 1px solid #9B9B9B;
+    width: 187.4px;
+}
+
+.Sign-in-apps{
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+    cursor: pointer;
+
+}
+
+.Sign-in-apps:hover{
+    background-color: #1a4fbae5;
+    border-color: whitesmoke ;
+}
+
+.Sign-in-apps p{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #C1B6B6;
+    font-weight: 400;
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create a{
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    line-height: 17.2px;
+    text-decoration: none;
+    color: #4671C6;
+}
+
+.box-2{
+    width: 60%;
+    background-image: url(shutterstock_2199674497@3x\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+}
+
+@media only screen and (max-width: 1016px){
+    .box-2{
+        display: none;
+    }
+    .box-1{
+        width: 100%;
+    }
+    .box{
+        height: 100%;
+    }
+    h1{
+     line-height: normal;
+     margin-left: 30px;
+    }
+}
